@@ -1,6 +1,6 @@
 resource "byteplus_vpc" "foo" {
-  vpc_name   = var.vpc_name
-  cidr_block = var.vpc_cidr
+  vpc_name     = var.vpc_name
+  cidr_block   = var.vpc_cidr
   project_name = var.project_name
 }
 
@@ -14,7 +14,7 @@ resource "byteplus_subnet" "foo" {
 resource "byteplus_security_group" "foo" {
   vpc_id              = byteplus_vpc.foo.id
   security_group_name = var.security_group_name
-  project_name = var.project_name
+  project_name        = var.project_name
 }
 
 resource "byteplus_eip_address" "foo" {
