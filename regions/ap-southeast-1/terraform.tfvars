@@ -1,5 +1,5 @@
-region      = "ap-southeast-1"
-endpoint    = "open.ap-southeast-1.byteplusapi.com"
+region   = "ap-southeast-1"
+endpoint = "open.ap-southeast-1.byteplusapi.com"
 
 vpc_name    = "tf-test-vpc-demo"
 vpc_cidr    = "172.16.0.0/16"
